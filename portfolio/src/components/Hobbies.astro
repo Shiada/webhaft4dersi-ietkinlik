@@ -1,0 +1,28 @@
+---
+interface Props {
+  t: any;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="section" id="hobbies">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 class="section-title">
+        <span class="section-title-accent">{t.hobbies.title}</span>
+      </h2>
+      <p class="section-subtitle">{t.hobbies.subtitle}</p>
+    </div>
+
+    <div class="hobbies-grid">
+      {t.hobbies.items.map((hobby: any) => (
+        <div class="hobby-card fade-in">
+          <span class="hobby-icon">{hobby.icon}</span>
+          <h3 class="hobby-name">{hobby.name}</h3>
+          <p class="hobby-description">{hobby.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

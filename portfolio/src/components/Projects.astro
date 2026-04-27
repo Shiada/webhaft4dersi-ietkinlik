@@ -1,0 +1,54 @@
+---
+interface Props {
+  t: any;
+}
+
+const { t } = Astro.props;
+
+const projectIcons = ['📊', '📦', '🚗', '🔌', '📱'];
+---
+
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 class="section-title">
+        <span class="section-title-accent">{t.projects.title}</span>
+      </h2>
+      <p class="section-subtitle">{t.projects.subtitle}</p>
+    </div>
+
+    <div class="projects-grid">
+      {t.projects.items.map((project: any, index: number) => (
+        <article class={`project-card fade-in ${project.featured ? 'featured' : ''}`}>
+          <div class="project-card-header">
+            <div class="project-icon">{projectIcons[index] || '💡'}</div>
+            {project.featured && <span class="featured-badge">★ Featured</span>}
+          </div>
+
+          <h3 class="project-title">{project.title}</h3>
+
+          <div class="project-details">
+            <div class="project-detail">
+              <span class="project-detail-label problem">Sorun</span>
+              <p class="project-detail-text">{project.problem}</p>
+            </div>
+            <div class="project-detail">
+              <span class="project-detail-label solution">Çözüm</span>
+              <p class="project-detail-text">{project.solution}</p>
+            </div>
+            <div class="project-detail">
+              <span class="project-detail-label result">Sonuç</span>
+              <p class="project-detail-text">{project.result}</p>
+            </div>
+          </div>
+
+          <div class="project-tech">
+            {project.tech.map((tech: string) => (
+              <span class="tech-tag">{tech}</span>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

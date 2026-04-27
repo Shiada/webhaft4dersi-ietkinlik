@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "title": "Taha Armanç Bingöl | Full-Stack Geliştirici",
+    "description": "Bilgisayar Mühendisliği öğrencisi, Full-Stack geliştirici ve DevOps meraklısı. Modern web teknolojileri ile yenilikçi çözümler üreten portföy sitesi."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "projects": "Projeler",
+    "skills": "Yetenekler",
+    "experience": "Deneyim",
+    "education": "Eğitim",
+    "hobbies": "Hobiler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "greeting": "Merhaba, ben",
+    "name": "Taha Armanç Bingöl",
+    "title": "Full-Stack Geliştirici & DevOps Meraklısı",
+    "subtitle": "Bitlis Eren Üniversitesi Bilgisayar Mühendisliği 2. sınıf öğrencisiyim. Modern web teknolojileri, mobil uygulama geliştirme ve bulut altyapıları konusunda tutkulu bir mühendis adayıyım.",
+    "cta_primary": "Projelerime Göz At",
+    "cta_secondary": "İletişime Geç",
+    "scroll_hint": "Keşfetmek için kaydır"
+  },
+  "projects": {
+    "title": "Projeler",
+    "subtitle": "Gerçek dünya problemlerine ürettiğim çözümler",
+    "items": [
+      {
+        "title": "PMS - Araç Kiralama Yönetim Sistemi",
+        "problem": "Araç kiralama şirketleri, müşteri takibi, filo yönetimi ve faturalandırma süreçlerinde karmaşık ve zaman alıcı işlemlerle boğuşuyordu.",
+        "solution": "C# ve .NET ile kapsamlı bir Property Management System geliştirdim. Araç envanteri, müşteri CRM, otomatik faturalandırma ve raporlama modülleri entegre ettim.",
+        "result": "Kiralama süreçlerindeki operasyonel karmaşayı %40 oranında azalttım. Gerçek zamanlı filo takibi ile araç kullanım verimliliğini artırdım.",
+        "tech": ["C#", ".NET", "SQL Server", "WPF"],
+        "link": "#",
+        "featured": true
+      },
+      {
+        "title": "BEUShareBox - Sosyal Paylaşım Platformu",
+        "problem": "Üniversite öğrencilerinin ihtiyaç duyduğu ürünleri paylaşabileceği, filtreleyip arayabileceği bir platform yoktu.",
+        "solution": "Vanilla JavaScript ile SPA mimarisi kullanarak dinamik bir paylaşım platformu geliştirdim. LocalStorage ile veri kalıcılığı, gerçek zamanlı arama ve filtreleme özellikleri ekledim.",
+        "result": "Sıfır bağımlılık ile performanslı bir SPA oluşturdum. DOM manipülasyonu konusunda derinlemesine tecrübe kazandım.",
+        "tech": ["HTML5", "CSS3", "Vanilla JS", "LocalStorage"],
+        "link": "#",
+        "featured": true
+      },
+      {
+        "title": "Teknofest - Otonom Araç Projesi",
+        "problem": "Otonom sürüş yarışmasında araç navigasyonu, engel algılama ve rota optimizasyonu gibi karmaşık mühendislik problemleri çözülmeliydi.",
+        "solution": "Takım içinde yazılım geliştirici olarak görev aldım. Sensör verileri işleme, yol planlama algoritmaları ve gerçek zamanlı karar verme sistemleri üzerinde çalıştım.",
+        "result": "Teknofest yarışmasında takım olarak kritik teknik deneyimler kazandık. Gömülü sistemler ve gerçek zamanlı veri işleme konusunda pratik beceriler edindim.",
+        "tech": ["Python", "ROS", "OpenCV", "Embedded Systems"],
+        "link": "#",
+        "featured": false
+      },
+      {
+        "title": "NestJS Katalog API",
+        "problem": "Ürün kataloğu yönetimi için RESTful bir API altyapısına ihtiyaç vardı. Kimlik doğrulama, yetkilendirme ve veri validasyonu kritik gereksinimlerdi.",
+        "solution": "NestJS framework ile modüler bir API geliştirdim. JWT tabanlı authentication, role-based authorization, DTO validasyonu ve Swagger dokümantasyonu entegre ettim.",
+        "result": "Profesyonel seviyede bir backend API oluşturdum. Guard, interceptor ve pipe pattern'larını uygulamalı olarak öğrendim.",
+        "tech": ["NestJS", "TypeScript", "PostgreSQL", "JWT"],
+        "link": "#",
+        "featured": true
+      },
+      {
+        "title": "MAUI İndirim Takip Uygulaması",
+        "problem": "Kullanıcıların favori markalarındaki indirimleri takip edebileceği, bildirim alacağı bir mobil uygulama gerekiyordu.",
+        "solution": ".NET MAUI ile cross-platform bir mobil uygulama geliştirdim. Marka/kategori bazlı push bildirim sistemi, kullanıcı tercih yönetimi ve responsive UI tasarımı uyguladım.",
+        "result": "Tek kod tabanıyla hem Android hem iOS için çalışan bir uygulama oluşturdum. MVVM pattern ve veri bağlama konularında deneyim kazandım.",
+        "tech": ["C#", ".NET MAUI", "XAML", "MVVM"],
+        "link": "#",
+        "featured": false
+      }
+    ]
+  },
+  "skills": {
+    "title": "Yetenekler",
+    "subtitle": "Teknik ve profesyonel becerilerim",
+    "categories": [
+      {
+        "name": "Frontend",
+        "icon": "🎨",
+        "items": [
+          { "name": "HTML5 / CSS3", "level": 90 },
+          { "name": "JavaScript / TypeScript", "level": 85 },
+          { "name": "Astro / Next.js", "level": 75 },
+          { "name": "React", "level": 70 }
+        ]
+      },
+      {
+        "name": "Backend",
+        "icon": "⚙️",
+        "items": [
+          { "name": "C# / .NET", "level": 85 },
+          { "name": "NestJS / Node.js", "level": 80 },
+          { "name": "Python", "level": 75 },
+          { "name": "REST API Design", "level": 85 }
+        ]
+      },
+      {
+        "name": "DevOps & Cloud",
+        "icon": "☁️",
+        "items": [
+          { "name": "Docker / Compose", "level": 80 },
+          { "name": "GitHub Actions", "level": 75 },
+          { "name": "Linux / VPS", "level": 70 },
+          { "name": "CI/CD Pipelines", "level": 75 }
+        ]
+      },
+      {
+        "name": "Veritabanı",
+        "icon": "🗄️",
+        "items": [
+          { "name": "PostgreSQL", "level": 80 },
+          { "name": "SQL Server", "level": 85 },
+          { "name": "MongoDB", "level": 70 },
+          { "name": "Redis", "level": 60 }
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Deneyim",
+    "subtitle": "Profesyonel ve akademik deneyimlerim",
+    "items": [
+      {
+        "title": "Yazılım Geliştirici",
+        "company": "Freelance / Kişisel Projeler",
+        "period": "2024 - Günümüz",
+        "description": "Full-stack web ve mobil uygulama geliştirme projeleri. Araç kiralama yönetim sistemi (PMS), sosyal paylaşım platformu ve RESTful API'ler geliştirdim.",
+        "highlights": [
+          "5+ proje tamamlandı",
+          "C#, TypeScript, Python ile çalışma",
+          "Docker containerization deneyimi"
+        ]
+      },
+      {
+        "title": "Takım Üyesi - Yazılım Geliştirici",
+        "company": "Teknofest Otonom Araç Takımı",
+        "period": "2024 - 2025",
+        "description": "Otonom sürüş yarışması kapsamında yazılım geliştirme ekibinde aktif rol aldım. Sensör entegrasyonu ve rota planlama algoritmalarında çalıştım.",
+        "highlights": [
+          "ROS tabanlı navigasyon sistemi",
+          "OpenCV ile görüntü işleme",
+          "Takım çalışması ve agile deneyimi"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Eğitim",
+    "subtitle": "Akademik geçmişim",
+    "items": [
+      {
+        "degree": "Bilgisayar Mühendisliği Lisans",
+        "school": "Bitlis Eren Üniversitesi",
+        "period": "2024 - 2028 (Devam Ediyor)",
+        "description": "Bilgisayar Mühendisliği bölümünde 2. sınıf öğrencisiyim. Veri yapıları, algoritmalar, web tabanlı programlama, mobil uygulama geliştirme ve veritabanı yönetimi derslerini alıyorum.",
+        "highlights": [
+          "Web Tabanlı Programlama dersi",
+          "Mobil Uygulama Geliştirme projesi",
+          "Algoritma ve Veri Yapıları"
+        ]
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "Hobiler & İlgi Alanları",
+    "subtitle": "Kod yazmadığım zamanlarda",
+    "items": [
+      {
+        "name": "Açık Kaynak",
+        "icon": "💻",
+        "description": "GitHub'da açık kaynak projelere katkıda bulunmayı ve yeni teknolojileri keşfetmeyi seviyorum."
+      },
+      {
+        "name": "Teknoloji Haberleri",
+        "icon": "📰",
+        "description": "Yapay zeka, cloud computing ve yeni framework'ler hakkındaki gelişmeleri yakından takip ediyorum."
+      },
+      {
+        "name": "Oyun Geliştirme",
+        "icon": "🎮",
+        "description": "Unity ve Unreal Engine ile oyun geliştirme denemelerinde bulunuyorum."
+      },
+      {
+        "name": "Spor",
+        "icon": "⚽",
+        "description": "Düzenli olarak spor yaparak fiziksel ve zihinsel sağlığımı korumaya özen gösteriyorum."
+      },
+      {
+        "name": "Müzik",
+        "icon": "🎵",
+        "description": "Müzik dinlemek ve çeşitli müzik türlerini keşfetmek en büyük hobilerimden biri."
+      },
+      {
+        "name": "Problem Çözme",
+        "icon": "🧩",
+        "description": "LeetCode ve HackerRank gibi platformlarda algoritma problemleri çözmeyi severim."
+      }
+    ]
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Benimle iletişime geçin",
+    "description": "Proje fikirleri, iş birliği teklifleri veya sadece merhaba demek için benimle iletişime geçebilirsiniz.",
+    "form": {
+      "name": "Adınız",
+      "email": "E-posta Adresiniz",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "submit": "Gönder"
+    },
+    "info": {
+      "email": "taha@example.com",
+      "location": "Bitlis, Türkiye",
+      "github": "github.com/tahaarmancbingol",
+      "linkedin": "linkedin.com/in/tahaarmancbingol"
+    }
+  },
+  "footer": {
+    "copyright": "Taha Armanç Bingöl. Tüm hakları saklıdır.",
+    "built_with": "Astro, Docker & ❤️ ile yapıldı"
+  },
+  "theme": {
+    "toggle_light": "Açık Mod",
+    "toggle_dark": "Koyu Mod"
+  },
+  "lang_switch": "English"
+}

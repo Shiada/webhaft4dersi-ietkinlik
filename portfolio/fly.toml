@@ -1,0 +1,28 @@
+# Fly.io Configuration
+# Multi-region deployment for bonus points
+
+app = "taha-portfolio"
+primary_region = "fra"  # Frankfurt - closest to Turkey
+
+[build]
+  dockerfile = "Dockerfile"
+
+[http_service]
+  internal_port = 80
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ["app"]
+
+  [http_service.concurrency]
+    type = "requests"
+    hard_limit = 250
+    soft_limit = 200
+
+# Multi-region for bonus (edge deployment)
+# fly scale count 1 --region fra,ams,lhr
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 256

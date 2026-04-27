@@ -1,0 +1,64 @@
+---
+interface Props {
+  lang: string;
+  t: any;
+}
+
+const { lang, t } = Astro.props;
+const altLang = lang === 'tr' ? 'en' : 'tr';
+const altUrl = lang === 'tr' ? '/en/' : '/';
+---
+
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href={lang === 'tr' ? '/' : '/en/'} class="navbar-logo">
+      {'<'}<span>TAB</span>{' />'}
+    </a>
+
+    <div class="navbar-links" id="nav-links">
+      <a href="#projects">{t.nav.projects}</a>
+      <a href="#skills">{t.nav.skills}</a>
+      <a href="#experience">{t.nav.experience}</a>
+      <a href="#education">{t.nav.education}</a>
+      <a href="#hobbies">{t.nav.hobbies}</a>
+      <a href="#contact">{t.nav.contact}</a>
+    </div>
+
+    <div class="navbar-actions">
+      <a href={altUrl} class="lang-switch" id="lang-switch">
+        {t.lang_switch}
+      </a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-icon">🌙</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Theme toggle
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeIcon = themeToggle?.querySelector('.theme-icon');
+  
+  function updateThemeIcon() {
+    const current = document.documentElement.getAttribute('data-theme');
+    if (themeIcon) {
+      themeIcon.textContent = current === 'dark' ? '☀️' : '🌙';
+    }
+  }
+
+  updateThemeIcon();
+
+  themeToggle?.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateThemeIcon();
+  });
+</script>

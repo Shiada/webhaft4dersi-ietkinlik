@@ -1,0 +1,96 @@
+---
+interface Props {
+  t: any;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2 class="section-title">
+        <span class="section-title-accent">{t.contact.title}</span>
+      </h2>
+      <p class="section-subtitle">{t.contact.subtitle}</p>
+    </div>
+
+    <div class="contact-wrapper fade-in">
+      <div class="contact-info">
+        <p class="contact-description">{t.contact.description}</p>
+
+        <div class="contact-detail">
+          <span class="contact-detail-icon">📧</span>
+          <div class="contact-detail-content">
+            <span class="contact-detail-label">E-mail</span>
+            <span class="contact-detail-value">{t.contact.info.email}</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-detail-icon">📍</span>
+          <div class="contact-detail-content">
+            <span class="contact-detail-label">Location</span>
+            <span class="contact-detail-value">{t.contact.info.location}</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-detail-icon">🐙</span>
+          <div class="contact-detail-content">
+            <span class="contact-detail-label">GitHub</span>
+            <span class="contact-detail-value">{t.contact.info.github}</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="contact-detail-icon">💼</span>
+          <div class="contact-detail-content">
+            <span class="contact-detail-label">LinkedIn</span>
+            <span class="contact-detail-value">{t.contact.info.linkedin}</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" action="#" method="POST" id="contact-form">
+        <div class="form-group">
+          <label class="form-label" for="name">{t.contact.form.name}</label>
+          <input class="form-input" type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">{t.contact.form.email}</label>
+          <input class="form-input" type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="subject">{t.contact.form.subject}</label>
+          <input class="form-input" type="text" id="subject" name="subject" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="message">{t.contact.form.message}</label>
+          <textarea class="form-textarea" id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">{t.contact.form.submit} →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('.form-submit') as HTMLButtonElement;
+    const originalText = btn.textContent;
+    btn.textContent = '✓ Gönderildi!';
+    btn.style.background = 'linear-gradient(135deg, #10b981 0%, #34d399 100%)';
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.style.background = '';
+      form.reset();
+    }, 2000);
+  });
+</script>

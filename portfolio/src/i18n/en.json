@@ -1,0 +1,229 @@
+{
+  "meta": {
+    "title": "Taha Armanç Bingöl | Full-Stack Developer",
+    "description": "Computer Engineering student, Full-Stack developer and DevOps enthusiast. Portfolio showcasing innovative solutions built with modern web technologies."
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "hobbies": "Hobbies",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Taha Armanç Bingöl",
+    "title": "Full-Stack Developer & DevOps Enthusiast",
+    "subtitle": "I'm a 2nd year Computer Engineering student at Bitlis Eren University. An aspiring engineer passionate about modern web technologies, mobile development, and cloud infrastructure.",
+    "cta_primary": "View My Projects",
+    "cta_secondary": "Get In Touch",
+    "scroll_hint": "Scroll to explore"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Solutions I've built for real-world problems",
+    "items": [
+      {
+        "title": "PMS - Vehicle Rental Management System",
+        "problem": "Car rental companies were struggling with complex and time-consuming processes in customer tracking, fleet management, and billing.",
+        "solution": "Developed a comprehensive Property Management System using C# and .NET. Integrated vehicle inventory, customer CRM, automated billing, and reporting modules.",
+        "result": "Reduced operational complexity in rental processes by 40%. Improved vehicle utilization efficiency with real-time fleet tracking.",
+        "tech": ["C#", ".NET", "SQL Server", "WPF"],
+        "link": "#",
+        "featured": true
+      },
+      {
+        "title": "BEUShareBox - Social Sharing Platform",
+        "problem": "University students lacked a dedicated platform for sharing, filtering, and searching for needed products.",
+        "solution": "Built a dynamic SPA using Vanilla JavaScript with localStorage persistence, real-time search, and filtering capabilities.",
+        "result": "Created a performant SPA with zero dependencies. Gained deep expertise in DOM manipulation and state management.",
+        "tech": ["HTML5", "CSS3", "Vanilla JS", "LocalStorage"],
+        "link": "#",
+        "featured": true
+      },
+      {
+        "title": "Teknofest - Autonomous Vehicle Project",
+        "problem": "Complex engineering challenges in vehicle navigation, obstacle detection, and route optimization needed to be solved for the autonomous driving competition.",
+        "solution": "Served as a software developer in the team. Worked on sensor data processing, path planning algorithms, and real-time decision-making systems.",
+        "result": "Gained critical technical experience as a team in Teknofest competition. Acquired practical skills in embedded systems and real-time data processing.",
+        "tech": ["Python", "ROS", "OpenCV", "Embedded Systems"],
+        "link": "#",
+        "featured": false
+      },
+      {
+        "title": "NestJS Catalog API",
+        "problem": "A RESTful API infrastructure was needed for product catalog management. Authentication, authorization, and data validation were critical requirements.",
+        "solution": "Developed a modular API with NestJS framework. Integrated JWT-based authentication, role-based authorization, DTO validation, and Swagger documentation.",
+        "result": "Built a professional-grade backend API. Gained hands-on experience with Guard, Interceptor, and Pipe patterns.",
+        "tech": ["NestJS", "TypeScript", "PostgreSQL", "JWT"],
+        "link": "#",
+        "featured": true
+      },
+      {
+        "title": "MAUI Discount Tracker App",
+        "problem": "Users needed a mobile app to track discounts from their favorite brands and receive notifications.",
+        "solution": "Developed a cross-platform mobile app with .NET MAUI. Implemented brand/category-based push notification system, user preference management, and responsive UI.",
+        "result": "Created a single-codebase app running on both Android and iOS. Gained experience in MVVM pattern and data binding.",
+        "tech": ["C#", ".NET MAUI", "XAML", "MVVM"],
+        "link": "#",
+        "featured": false
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My technical and professional expertise",
+    "categories": [
+      {
+        "name": "Frontend",
+        "icon": "🎨",
+        "items": [
+          { "name": "HTML5 / CSS3", "level": 90 },
+          { "name": "JavaScript / TypeScript", "level": 85 },
+          { "name": "Astro / Next.js", "level": 75 },
+          { "name": "React", "level": 70 }
+        ]
+      },
+      {
+        "name": "Backend",
+        "icon": "⚙️",
+        "items": [
+          { "name": "C# / .NET", "level": 85 },
+          { "name": "NestJS / Node.js", "level": 80 },
+          { "name": "Python", "level": 75 },
+          { "name": "REST API Design", "level": 85 }
+        ]
+      },
+      {
+        "name": "DevOps & Cloud",
+        "icon": "☁️",
+        "items": [
+          { "name": "Docker / Compose", "level": 80 },
+          { "name": "GitHub Actions", "level": 75 },
+          { "name": "Linux / VPS", "level": 70 },
+          { "name": "CI/CD Pipelines", "level": 75 }
+        ]
+      },
+      {
+        "name": "Database",
+        "icon": "🗄️",
+        "items": [
+          { "name": "PostgreSQL", "level": 80 },
+          { "name": "SQL Server", "level": 85 },
+          { "name": "MongoDB", "level": 70 },
+          { "name": "Redis", "level": 60 }
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional and academic journey",
+    "items": [
+      {
+        "title": "Software Developer",
+        "company": "Freelance / Personal Projects",
+        "period": "2024 - Present",
+        "description": "Full-stack web and mobile application development projects. Developed vehicle rental management system (PMS), social sharing platform, and RESTful APIs.",
+        "highlights": [
+          "5+ projects completed",
+          "Working with C#, TypeScript, Python",
+          "Docker containerization experience"
+        ]
+      },
+      {
+        "title": "Team Member - Software Developer",
+        "company": "Teknofest Autonomous Vehicle Team",
+        "period": "2024 - 2025",
+        "description": "Took an active role in the software development team within the autonomous driving competition. Worked on sensor integration and route planning algorithms.",
+        "highlights": [
+          "ROS-based navigation system",
+          "Image processing with OpenCV",
+          "Teamwork and agile experience"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "My academic background",
+    "items": [
+      {
+        "degree": "B.Sc. Computer Engineering",
+        "school": "Bitlis Eren University",
+        "period": "2024 - 2028 (Ongoing)",
+        "description": "2nd year Computer Engineering student. Currently studying Data Structures, Algorithms, Web-Based Programming, Mobile App Development, and Database Management.",
+        "highlights": [
+          "Web-Based Programming course",
+          "Mobile Application Development project",
+          "Algorithms and Data Structures"
+        ]
+      }
+    ]
+  },
+  "hobbies": {
+    "title": "Hobbies & Interests",
+    "subtitle": "When I'm not writing code",
+    "items": [
+      {
+        "name": "Open Source",
+        "icon": "💻",
+        "description": "I enjoy contributing to open source projects on GitHub and exploring new technologies."
+      },
+      {
+        "name": "Tech News",
+        "icon": "📰",
+        "description": "I closely follow developments in AI, cloud computing, and emerging frameworks."
+      },
+      {
+        "name": "Game Development",
+        "icon": "🎮",
+        "description": "I experiment with game development using Unity and Unreal Engine."
+      },
+      {
+        "name": "Sports",
+        "icon": "⚽",
+        "description": "I regularly exercise to maintain both my physical and mental health."
+      },
+      {
+        "name": "Music",
+        "icon": "🎵",
+        "description": "Listening to music and discovering different genres is one of my biggest hobbies."
+      },
+      {
+        "name": "Problem Solving",
+        "icon": "🧩",
+        "description": "I enjoy solving algorithm challenges on platforms like LeetCode and HackerRank."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch with me",
+    "description": "Feel free to reach out for project ideas, collaboration opportunities, or just to say hello.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message"
+    },
+    "info": {
+      "email": "taha@example.com",
+      "location": "Bitlis, Turkey",
+      "github": "github.com/tahaarmancbingol",
+      "linkedin": "linkedin.com/in/tahaarmancbingol"
+    }
+  },
+  "footer": {
+    "copyright": "Taha Armanç Bingöl. All rights reserved.",
+    "built_with": "Built with Astro, Docker & ❤️"
+  },
+  "theme": {
+    "toggle_light": "Light Mode",
+    "toggle_dark": "Dark Mode"
+  },
+  "lang_switch": "Türkçe"
+}
